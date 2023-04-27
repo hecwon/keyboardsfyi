@@ -1,0 +1,23 @@
+.NavBar {
+  display: flex;
+  flex-direction: row;
+}
+
+.NavLink {
+  max-width: 80px;
+  margin: auto 2vw;
+  font-family: "Rubik";
+}
+.layoutContainer {
+  background: papayawhip;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logoContainer {
+  background: papayawhip;
+  color: palevioletred;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
