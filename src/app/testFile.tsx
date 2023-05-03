@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image'
-import Layout from '../../components/layout.jsx'
+import Layout from '../../components/global/layout';
 import { Rubik } from 'next/font/google'
 import styles from './page.module.css'
 
