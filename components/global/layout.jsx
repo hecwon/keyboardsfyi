@@ -1,5 +1,5 @@
-import NavBar from './global/NavBar.jsx';
-import Logo from '../components/global/logo.jsx';
+import NavBar from './NavBar.jsx';
+import Logo from './logo.jsx';
 import styles from './layout.module.css';
 
 const Layout = ( {children} ) => {
@@ -7,9 +7,9 @@ const Layout = ( {children} ) => {
     <div className={styles.layoutContainer}>
       <NavBar />
       <Logo />
-        <main>
-          {children}
-        </main>
+      <main>
+        {children}
+      </main>
     </div>
   )
 }

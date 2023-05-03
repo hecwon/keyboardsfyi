@@ -1,6 +1,6 @@
 import { Press_Start_2P } from 'next/font/google';
 import Link from 'next/link';
-import styles from '../layout.module.css';
+import styles from './layout.module.css';
 
 const ps2Font = Press_Start_2P({
   subsets: ['latin'],

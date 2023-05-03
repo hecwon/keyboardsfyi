@@ -5,8 +5,14 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
+  max-width: 80vw;
+  font-family: "Rubik";
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }
 
 .grid {

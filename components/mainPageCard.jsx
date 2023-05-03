@@ -1,10 +1,18 @@
 import styled from "styled-components";
 
-const MainPageCard = ({part}) => {
+const MainPageCard = ({part, inputRef}) => {
+
+  const handleChange = (e) => {
+    inputRef.current = e.target.value;
+    console.log(inputRef, inputRef.current);
+  }
 
   return (
     <div>
-      <input placeholder={part}></input>
+      <input
+        type="text"
+        onChange={(e) => {handleChange(3)}}
+        placeholder={part.toUpperCase()} />
     </div>
   )
 }

@@ -1,23 +1,25 @@
 .NavBar {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
 }
 
 .NavLink {
   max-width: 80px;
   margin: auto 2vw;
   font-family: "Rubik";
+  font-weight: 400;
+  font-size: 21px;
 }
 .layoutContainer {
-  background: papayawhip;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .logoContainer {
-  background: papayawhip;
-  color: palevioletred;
+  font-family: "Press_Start_2P", "Rubik";
+  color: white;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 2rem;
 }

@@ -2,18 +2,14 @@
 
 import styled from "styled-components";
 import React, {useRef} from "react";
-import Layout from '../../../components/layout.jsx';
+import Layout from '../../../components/global/layout.jsx';
 import MainPageCard from "../../../components/mainPageCard.jsx";
 
 const Main = () => {
-  const Case = useRef(null);
-  const Switch = useRef(null);
-  const Stab = useRef(null);
-  const Keycap = useRef(null);
-
-  const handleChange = (value: string, input: string) => {
-
-  }
+  const Case = useRef<HTMLInputElement | null>(null);
+  const Switch = useRef<HTMLInputElement | null>(null);
+  const Stab = useRef<HTMLInputElement | null>(null);
+  const Keycap = useRef<HTMLInputElement | null>(null);
 
   const handleSearch = (): void => {
     // e.preventDefault();
@@ -29,26 +25,23 @@ const Main = () => {
 
   return (
     <Layout>
-      <Background>
-        <MainPageCard part="CASE"/>
-        <MainPageCard part="SWITCH"/>
-        <MainPageCard part="STAB"/>
-        <MainPageCard part="KEYCAP"/>
+        <MainPageCard part="case" inputRef={Case}/>
+        <MainPageCard part="switch" inputRef={Switch}/>
+        <MainPageCard part="stab" inputRef={Stab}/>
+        <MainPageCard part="keycap" inputRef={Keycap}/>
         <button onClick={() => {handleSearch()}}>SEARCH</button>
-      </Background>
+
     </Layout>
   )
 }
 
 const Header = styled.div`
   text-align: center;
-  color: palevioletred;
   font-size: 4em;
   padding-top: 7vh;
   `
 
 const Background = styled.div`
-  background: papayawhip;
   height: 100vh;
   `
 
