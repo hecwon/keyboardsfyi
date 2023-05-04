@@ -1,7 +1,7 @@
 module.exports = {
-  1: 'Owlstabs',
+  0: 'Owlstabs',
+  1: 'Staebies',
   2: 'Durock',
   3: 'KBDFans',
   4: 'DROP',
-  5: 'Staebies',
 }

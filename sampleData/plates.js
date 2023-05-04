@@ -6,5 +6,5 @@ module.exports = {
   5: 'brass',
   6: 'steel',
   7: 'copper',
-  8: 'plateless',
+  0: 'plateless',
 }

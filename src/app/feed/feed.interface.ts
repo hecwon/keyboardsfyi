@@ -1,0 +1,15 @@
+export interface Keyboard {
+  keyboardIdPK: number,
+  case: string,
+  keycap: string,
+  plate: string,
+  stab: string,
+  switch: string,
+  user: string,
+  recDevice: string,
+  title: string,
+  createdAt: Date,
+  commentsCount: number,
+  commentsFK: number,
+  upvotesFK: number,
+}

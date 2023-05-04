@@ -1,5 +1,5 @@
 module.exports = {
-  c1 : {
+  0 : {
     manufacturer: 'QwertyKeys',
     model: 'QK60',
     releaseYear: 2022,
@@ -9,7 +9,7 @@ module.exports = {
     pcbs: true,
   },
 
-  c2 : {
+  1 : {
     manufacturer: 'Velocifire',
     model: 'BUBBLE 75',
     releaseYear: 2022,

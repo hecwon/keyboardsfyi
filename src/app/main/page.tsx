@@ -25,12 +25,11 @@ const Main = () => {
 
   return (
     <Layout>
-        <MainPageCard part="case" inputRef={Case}/>
-        <MainPageCard part="switch" inputRef={Switch}/>
-        <MainPageCard part="stab" inputRef={Stab}/>
-        <MainPageCard part="keycap" inputRef={Keycap}/>
-        <button onClick={() => {handleSearch()}}>SEARCH</button>
-
+      <MainPageCard part="case" inputRef={Case}/>
+      <MainPageCard part="switch" inputRef={Switch}/>
+      <MainPageCard part="stab" inputRef={Stab}/>
+      <MainPageCard part="keycap" inputRef={Keycap}/>
+      <button onClick={() => {handleSearch()}}>SEARCH</button>
     </Layout>
   )
 }
