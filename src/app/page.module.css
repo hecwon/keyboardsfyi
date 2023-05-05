@@ -9,7 +9,9 @@
   max-width: 80vw;
   font-family: "Rubik";
 }
-
+.block {
+  height: 6vh;
+}
 .center {
   display: flex;
   justify-content: center;
