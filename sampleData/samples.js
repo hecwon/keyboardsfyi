@@ -7,7 +7,7 @@ import * as switches from './switch.js';
 module.exports = {
   keyboard1: {
     keyboardIdPK: 1,
-    case: cases[0],
+    case: cases[0].model,
     keycap: keycaps[0],
     plate: plates[0],
     stab: stabs[0],
@@ -23,7 +23,7 @@ module.exports = {
 
   keyboard2: {
     keyboardIdPK: 2,
-    case: cases[1],
+    case: cases[1].model,
     keycap: keycaps[1],
     plate: plates[1],
     stab: stabs[1],
@@ -39,7 +39,7 @@ module.exports = {
 
   keyboard3: {
     keyboardIdPK: 3,
-    case: cases[1],
+    case: cases[1].model,
     keycap: keycaps[2],
     plate: plates[3],
     stab: stabs[0],

@@ -1,9 +1,8 @@
-'use client'
-
 import Link from 'next/link';
 import { Rubik } from 'next/font/google';
 import Layout from '../../components/global/layout';
 import styles from './page.module.css'
+import './globals.css';
 
 const rubik = Rubik({
   subsets: ['latin'],

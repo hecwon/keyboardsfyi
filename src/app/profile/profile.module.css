@@ -1,0 +1,14 @@
+.idCard {
+  width: 20vw;
+  height: 20vh;
+  background-color: #DADBCA;
+  font-size: 30px;
+  color: rgb(52, 59, 72);
+}
+
+.profileContainer {
+  width: 80vw;
+  grid-template-rows: [row1] 20vh [row2] 20vh [row3] 20vh;
+  display: grid;
+  grid-template-columns: [edgeL] 10vw [left] 40vw [right] 40vw [edgeR] 10vw;
+}
