@@ -1,6 +1,41 @@
 .card {
   width: 30vw;
-  height: 30vh;
-  background: white;
-  font-family: "Rubik"
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  height: 60vh;
+  max-height: 900px;
+  background: rgb(49 55 60);
+  margin: 20px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0px;
+  flex-grow: 1;
+}
+
+.details {
+  align-self: flex-end;
+  font-size: 18px;
+  flex-grow: 8;
+}
+
+.feedTopMargin {
+  max-height: 5vh;
+  height: 40px;
+}
+
+.feedContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: stretch;
+  background: rgb(94 89 97);
+  max-height: 1300px;
+  height: 65vh;
+  overflow: auto;
 }

@@ -1,19 +1,41 @@
 import { Keyboard } from '../../src/app/feed/feed.interface';
 import styles from '../../src/app/feed/feed.module.css';
+import Tickbox from './tickbox';
+import formatDistanceToNow from 'date-fns/formatDistanceToNow';
+
 const FeedCard = ({ keyboard, key }) => {
 
   return (
     <div key={key} className="styles.card">
-      <div >
+      <div className={styles.card}>
         <p>{keyboard.title}</p>
-        <p>Case: {keyboard.case}</p>
-        <p>Keycaps: {keyboard.keycap}</p>
-        <p>Plate Material: {keyboard.plate}</p>
-        <p>Switches: {keyboard.switch}</p>
-        <p>Stabs: {keyboard.stab}</p>
-        <p>Recording Device: {keyboard.recDevice}</p>
-        <p>{keyboard.createdAt} {keyboard.upvotesFK}⬆️ {keyboard.commentsFK} comments</p>
-        <p>{keyboard.user}</p>
+        <div className={styles.line}>
+          <Tickbox />
+          <p>C: {keyboard.case}</p>
+        </div>
+        <div className={styles.line}>
+          <Tickbox />
+          <p>KC: {keyboard.keycap}</p>
+        </div>
+        <div className={styles.line}>
+          <Tickbox />
+          <p>Pl8: {keyboard.plate}</p>
+        </div>
+        <div className={styles.line}>
+          <Tickbox />
+          <p>Sw: {keyboard.switch}</p>
+        </div>
+        <div className={styles.line}>
+          <Tickbox />
+          <p>St: {keyboard.stab}</p>
+        </div>
+        <div className={styles.line}>
+          <Tickbox />
+          <p>Rec: {keyboard.recDevice}</p>
+        </div>
+        <div className={styles.details}>
+          <p>{keyboard.upvotesFK}⬆️ {keyboard.commentsFK} comments {keyboard.user}</p>
+        </div>
       </div>
     </div>
   )

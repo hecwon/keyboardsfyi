@@ -1,0 +1,10 @@
+.tickContainer {
+  background-color: #DADBCA;
+  height: 23px;
+  width: 23px;
+  display: flex;
+  margin-right: 15px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
