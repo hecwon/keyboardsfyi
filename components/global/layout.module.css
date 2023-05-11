@@ -2,11 +2,12 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  gap: 20px;
 }
 
 .NavLink {
   max-width: 80px;
-  margin: auto 2vw;
+  margin-right: 30px;
   font-family: "Rubik";
   font-weight: 400;
   font-size: 21px;
@@ -15,6 +16,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: "Rubik";
+  overflow-y: auto;
 }
 .logoContainer {
   font-family: "Press_Start_2P", "Rubik";
