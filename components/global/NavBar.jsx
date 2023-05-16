@@ -9,6 +9,7 @@ const NavBar = () => {
       <Link href="/search" className={styles.NavLink}>Search</Link>
       <Link href="/feed" className={styles.NavLink}>Feed</Link>
       <Link href="/profile" className={styles.NavLink}>Profile</Link>
+      <Link href="/new" className={styles.NavLink}>Post</Link>
     </nav>
   )
 }

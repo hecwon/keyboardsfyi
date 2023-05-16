@@ -6,7 +6,7 @@ import formatDistanceToNow from 'date-fns/formatDistanceToNow';
 const FeedCard = ({ keyboard, key }) => {
 
   return (
-    <div key={key} className="styles.card">
+    <div className="styles.card">
       <div className={styles.card}>
         <p>{keyboard.title}</p>
         <div className={styles.line}>
