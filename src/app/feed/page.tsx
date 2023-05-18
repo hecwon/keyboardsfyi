@@ -4,19 +4,19 @@ import Layout from '../../../components/global/layout';
 import styles from './feed.module.css';
 import { Keyboard } from './feed.interface';
 
-interface Data {
+interface feedKbs {
   [key : string] : Keyboard;
 }
 
 const Feed = () => {
-  const data: Data = samples;
+  const keybs: feedKbs = samples;
 
   return (
     <Layout>
     <div>Feed</div>
       <div className={styles.feedTopMargin}></div>
       <div className={styles.feedContainer}>
-        {Object.values(data).map((each) => {
+        {Object.values(keybs).map((each) => {
           return <FeedCard keyboard={each} key={each.keyboardIdPK}/>
         })}
       </div>

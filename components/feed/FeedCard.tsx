@@ -1,14 +1,15 @@
 import { Keyboard } from '../../src/app/feed/feed.interface';
 import styles from '../../src/app/feed/feed.module.css';
 import Tickbox from './tickbox';
-import formatDistanceToNow from 'date-fns/formatDistanceToNow';
 
-const FeedCard = ({ keyboard, key }) => {
+const FeedCard: React.FC<{ keyboard: Keyboard }> = ({ keyboard }) => {
 
   return (
     <div className="styles.card">
       <div className={styles.card}>
-        <p>{keyboard.title}</p>
+        <div className={styles.title}>
+          <span>{keyboard.title}</span>
+          </div>
         <div className={styles.line}>
           <Tickbox />
           <p>C: {keyboard.case}</p>
@@ -42,22 +43,3 @@ const FeedCard = ({ keyboard, key }) => {
 }
 
 export default FeedCard;
-
-/*
-module.exports = {
-  keyboard1: {
-    keyboardIdPK: 1,
-    case: cases[0],
-    keycap: keycaps[0],
-    plate: plates[0]
-    stab: stabs[0],
-    switch: switches[0],
-    user: 'hector',
-    recDevice: 'iPhone 13',
-    title: 'sweet new qk60',
-    createdAt: new Date(),
-    commentsCount: 5,
-    commentsFK: 1,
-    upvotesFK: 1,
-  },
-*/

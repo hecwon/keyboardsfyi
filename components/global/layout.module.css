@@ -21,7 +21,6 @@
   flex-direction: column;
   justify-content: center;
   font-family: "Rubik";
-  overflow-y: auto;
 }
 .logoContainer {
   font-family: "Press_Start_2P", "Rubik";
