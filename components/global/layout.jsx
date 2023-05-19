@@ -7,7 +7,7 @@ const Layout = ( {children} ) => {
     <div className={styles.layoutContainer}>
       <NavBar />
       <Logo />
-      <main>
+      <main className={styles.center}>
         {children}
       </main>
     </div>

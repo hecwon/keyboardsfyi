@@ -3,8 +3,12 @@ import Layout from '../../components/global/layout';
 import styles from './page.module.css'
 import './globals.css';
 import Image from 'next/image';
+// import { supabase } from '../../DB/supabaseClient';
 
-const Home = () => {
+const Home = async () => {
+  // let something = await supabase.from('users').select();
+  // console.log('HELLO', something.data);
+
   return (
     <Layout>
       <main className={styles.main}>
