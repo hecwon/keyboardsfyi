@@ -7,7 +7,6 @@ import { supabase } from '../../DB/supabaseClient';
 
 const Home = async () => {
   let something = await supabase.from('users').select();
-  console.log('---------------------------------------------');
   console.log('HELLO', something.data);
 
   return (
